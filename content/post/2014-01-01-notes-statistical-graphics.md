@@ -1,0 +1,24 @@
+---
+title: notes statistical graphics
+date: '2014-01-01'
+slug: notes-statistical-graphics
+tags: ['stat']
+---
+
+
+1. <http://www.biostat.wisc.edu/~kbroman/presentations/IowaState2013/graphs_combined.pdf>
+2. <http://www.biostat.wisc.edu/~kbroman/presentations/IowaState2013/index.html>
+
+# Display data well
+
+- accurate and clear
+- show as much information as possible
+- avoid unnecessary frills
+- things to be compared should be adjacent
+- add color for comparison
+- value $\propto$ radius
+- align things vertically
+- use common axes
+- use labels not legend
+- don't sort alphabetically (use meaningful variables)
+- consider taking logs and/or differences
