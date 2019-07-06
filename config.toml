@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "A Hugo website"
+title = "Minzhao Personal Blog"
 theme = "hyde-hyde"
 googleAnalytics = ""
 disqusShortname = ""
@@ -9,34 +9,55 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 [permalinks]
     post = "/:year/:month/:day/:slug/"
 
+## Site Settings
+[params]
+    author = "Author"
+    title = "Title"
+    # description = "..."
+    authorimage = "assets/xiaojie.jpg"
+    dateformat = "Jan 2, 2006"
+
+    # sidebar, copyright & license
+    copyright = "Minzhao"
+    license = "CC BY-NC-SA 4.0"
+    licenseURL = "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    showBuiltWith = true
+
+    # https://highlightjs.org
+    highlightjs = true
+    highlightjsstyle = "github"
+    
+    # please choose either GraphComment or Disqus or Utterances
+    #GraphCommentId = "..."
+    #UtterancesRepo = "..." # https://utteranc.es/
+    #UtterancesIssueTerm = "..." # pathname, url, title, og:title
+    #UtterancesTheme = "..." # github-light or github-dark
+
+    # Table of contents
+    toc = "hugo"
+    ##none, "hugo", or "tocbot"
+
+## Social Accounts
+[params.social]
+    github = "liuminzhao"
+    linkedin = "liuminzhao"
+    stackoverflow = "liuminzhao"
+    email = "liuminzhao@gmail.com"
+    # gravatar = "your-email@example.com"
+
+## Main Menu
+[[menu.main]]
+    name = "Posts"
+    weight = 100
+    identifier = "posts"
+    url = "/posts/"
+[[menu.main]]
+    name = "Portfolio"
+    identifier = "portfolio"
+    weight = 200
+    url = "/portfolio/"
 [[menu.main]]
     name = "About"
+    identifier = "about"
+    weight = 300
     url = "/about/"
-[[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/rstudio/blogdown"
-[[menu.main]]
-    name = "Twitter"
-    url = "https://twitter.com/rstudio"
-
-[params]
-    description = "A website built through Hugo and blogdown."
-
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.12.0"
-    highlightjsCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
-
-    MathJaxCDN = "//cdnjs.cloudflare.com/ajax/libs"
-    MathJaxVersion = "2.7.5"
-
-    # path to the favicon, under "static"
-    favicon = "favicon.ico"
-
-    [params.logo]
-    url = "logo.png"
-    width = 50
-    height = 50
-    alt = "Logo"
-
